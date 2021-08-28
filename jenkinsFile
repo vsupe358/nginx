@@ -1,0 +1,21 @@
+pipeline {
+    agent any 
+    stages {
+        stage('Pull_Code') { 
+            steps {
+                echo 'Pulling Code'                
+            }
+        }
+        stage('Update_title') { 
+            steps {
+                echo 'Update title'
+                 
+            }
+        }
+        stage('Display') { 
+            steps {
+                echo 'Display Pipeline'
+            }
+        }
+    }
+}
